@@ -1,1 +1,124 @@
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+            font-family: Arial, sans-serif;
+        }
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+            position: fixed;
+            top: 0;
+            width: 100%;
+        }
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            text-align: center;
+            margin-top: 70px;
+        }
+        .container img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+        }
+        .container h1 {
+            margin-top: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+        .buttons-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .buttons-container button {
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+        }
+        .settings-button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 16px;
+        }
+        .settings-menu {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+        .settings-menu input {
+            margin: 10px;
+        }
+    </style>
+    <script>
+        function checkPMS() {
+            var password = prompt("Please enter the password:");
+            if (password === "WPMSPROXY111") {
+                alert("This is your proxy AID - 234567e35728414wr2rr4edvr28dbuye72ye8de2y932d-2fe3322xsPMS please copy this");
+            } else {
+                alert("Incorrect password. Please try again.");
+            }
+        }
+
+        function toggleSettingsMenu() {
+            var settingsMenu = document.getElementById("settings-menu");
+            settingsMenu.style.display = (settingsMenu.style.display === "none" || settingsMenu.style.display === "") ? "block" : "none";
+        }
+
+        function setMode(mode) {
+            if (mode === "light") {
+                document.body.style.backgroundColor = "#f0f0f0";
+                document.body.style.color = "#333";
+            } else if (mode === "dark") {
+                document.body.style.backgroundColor = "#333";
+                document.body.style.color = "#f0f0f0";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="navbar">
+        <a href="projects.html">Projects</a>
+        <a href="access.html">Get Access to a Proxy</a>
+        <a href="credits.html">Credits</a>
+        <a href="guide.html">proxy how-to</a>
+    </div>
+  <p1>how to make a proxy</p1>
+<h3>Part 1: what you need</h3>
+<p>you need:
+basic coding experience
+ a cloud service: (Koyeb,Onrender,fucking AWS)
+ uhh being able to read :3
+</p>
+<h3>part 2: get a website (or freeDNS if you hate your life)</h3>
+<p>First if you are not broke buy a website at</p>
+<input type="button" value="Cloudflare" onclick="window.location.href='https://www.cloudflare.com/';">
+<p> or if you got no bands go to free DNS (i will put the link later i forgot :3)</p>
+<p>once you buy a site we can move onto...<p/>
+  <h3>make your server</h3>
+  <b>Uhh... we got to fix the repo :3</b>
